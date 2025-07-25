@@ -1,5 +1,3 @@
-vcr app generate-keys --region=aws.euw1 --app-id=22dd6774-1155-4876-84c0-979613152197
-
 # This is a demo for Airlines
 
 ## Use cases
