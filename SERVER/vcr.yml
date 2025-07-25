@@ -1,0 +1,15 @@
+project:
+    name: rcsairline
+instance:
+    name: dev
+    runtime: nodejs18
+    region: aws.euw1
+    application-id: 22dd6774-1155-4876-84c0-979613152197
+    entrypoint:
+        - node
+        - index.js
+debug:
+    application-id: 22dd6774-1155-4876-84c0-979613152197
+    entrypoint:
+        - node
+        - index.js
