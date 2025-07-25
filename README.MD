@@ -1,6 +1,6 @@
 # This is a demo for Airlines
 
-## Use cases
+## Use cases
 
 ### RCS Branded Text
 Send
