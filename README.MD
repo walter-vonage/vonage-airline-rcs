@@ -1,6 +1,7 @@
 # This is a demo for Airlines
+Check a video showing all this demo can do: https://drive.google.com/file/d/1C0C07cYoIICLsVne1NrkTleB1aL03Gm1/view?usp=sharing
 
-## Use cases
+## Use cases
 
 ### RCS Branded Text
 Send
