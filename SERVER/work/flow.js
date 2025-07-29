@@ -236,7 +236,10 @@ async function FS_confirm_meal(inbound, res) {
     const name = a.length >= 2 ? a[1] : '';
     const text = `Thanks, ${name}. Your meal preference has been recorded.
 You can update it anytime before check-in.
-    `
+    `;
+    RcsUtils.sendRCSText(inbound.phone, text, null, (response) => {
+        res.status(200).json(response)
+    })   
 }
 
 /**
@@ -866,18 +869,18 @@ Tap below to check your flight details.
  */
 async function RC(inbound, res) {
     const card = {
-        "title": "✈️ Welcome aboard with Vonage Airlines!",
-        "description": "We’re excited to have you flying with us. Tap below to check your flight details.",
+        "title": "Condor Activity Card",
+        "description": "Enjoy great perks on every trip. Now with 20% discount!",
         "media": {
             "height": "TALL",
             "contentInfo": {
-                "fileUrl": Config.data.SERVER + "/welcome.png",
+                "fileUrl": Config.data.SERVER + "/promo.png",
                 "forceRefresh": "false"
             }
         },
         "suggestions": [{
             "reply": {
-                "text": "View My Trip",
+                "text": "Save discount",
                 "postbackData": "view_my_trip_from_card"
             }
         }]
